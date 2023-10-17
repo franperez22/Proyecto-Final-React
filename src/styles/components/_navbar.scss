@@ -1,0 +1,20 @@
+.navbar-list {
+  &-item {
+    position: relative;
+    &:hover::after {
+      background-color: $primary-color;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 2px;
+      transition: 0.3s ease;
+    }
+    &.active::after {
+      background-color: $primary-color;
+    }
+  }
+  
+}

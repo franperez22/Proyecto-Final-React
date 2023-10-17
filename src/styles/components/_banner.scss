@@ -1,0 +1,35 @@
+.banner-container {
+  img {
+    transition: transform .3s cubic-bezier(.4,.95,.5,1.1) 50ms,opacity .3s!important;
+  }
+  &:hover {
+    img {
+      transform: scale3d(1.075,1.075,1);
+    }
+  }
+  button {
+    transition: 0.2s ease-in;
+
+    &:hover {
+      background-color: $button-global-hover-bg;
+      color: $button-global-hover-color;
+    }
+  } 
+}
+.banner-content {
+  color: $text-color-banner;
+}
+
+@media (max-width: 908px) {
+  .banner-content {
+    span {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    .description {
+      font-size: 12px;
+    }
+  }
+}
