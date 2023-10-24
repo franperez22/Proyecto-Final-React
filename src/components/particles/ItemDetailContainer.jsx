@@ -5,7 +5,7 @@ export default function ItemDetailContainer ({id}) {
     const { data } = useFetch(`https://fakestoreapi.com/products/${id}`)
     console.log("data", data)
     return (
-        <div>gaspi gil</div>
+        <div>{data.title}</div>
     )
 }
 
