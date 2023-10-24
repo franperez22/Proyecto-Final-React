@@ -10,6 +10,7 @@ export default function Card ({ product }) {
       </div>
       <div className='flex flex-col gap-4 flex-grow'>
         <span className='flex-grow'>{product.title}</span>
+        <span> ${product.price}</span>
         <button className='text-white bg-[#ff9577] p-1 rounded-[40px]'>Add to cart</button>
       </div>
     </div>
