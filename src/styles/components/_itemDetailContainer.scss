@@ -1,0 +1,38 @@
+.productDetail {
+  &-info-buttons {
+    button {
+      padding: 0 8px;
+      border-radius: 4px;
+      width: 104px;
+      transition: 0.2s ease-in;
+    }
+    .cart {
+      border: 2px solid #ff9577;
+      margin-right: 8px;
+
+      &:hover {
+        color: #FFF;
+        background-color: #ff9577;
+      }
+    }
+    .buy {
+      border: 2px solid #232323;
+      background-color: #232323;
+      color: #FFF;
+      &:hover {
+        border-color: #494949;
+        background-color: #494949;
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .productDetail {
+    flex-direction: column;
+
+    &-img {
+      width: 32vh;
+    }
+  }
+}
